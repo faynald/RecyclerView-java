@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:ignore="UsingOnClickInXml" >
+
+    <TextView
+        android:id="@+id/tv_warning"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="24dp"
+        android:text="@string/tv_warning"/>
+
+    <Button
+        android:id="@+id/tv_close_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/ok"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:backgroundTint="@color/transparent"
+        android:stateListAnimator="@null"
+        android:onClick="tutupDialog"
+        tools:targetApi="lollipop" />
+
+</RelativeLayout>

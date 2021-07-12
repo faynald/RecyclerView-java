@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:labelFor="@+id/edt_angka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/angka_1"/>
+
+    <EditText
+        android:id="@+id/edt_angka1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:inputType="number"
+        android:autofillHints="angka" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/angka_2"/>
+
+    <EditText
+        android:id="@+id/edt_angka2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hitung"/>
+
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hasil"/>
+
+    <Button
+        android:id="@+id/btn_pindah_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pindah_activity"/>
+
+    <Button
+        android:id="@+id/btn_pindah_activity_dengan_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pindah_activity_dengan_data"/>
+
+    <Button
+        android:id="@+id/btn_implicit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_implicit"/>
+
+    <Button
+        android:id="@+id/btn_iphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alias" />
+
+    <Button
+        android:id="@+id/btn_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recycler_view" />
+
+</LinearLayout>

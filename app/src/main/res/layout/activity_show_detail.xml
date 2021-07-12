@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/iphonese"
+                android:contentDescription="@string/alias" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="16dp"
+                android:background="#28575757"
+                android:padding="16dp"
+                android:text="@string/banyak_gambar"
+                android:textSize="16sp"
+                app:drawableStartCompat="@drawable/ic_baseline_collections_24"
+                android:drawablePadding="5dp" />
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/text_specs"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="24sp"
+            android:text="@string/nominal_harga"/>
+
+        <TextView
+            style="@style/text_specs"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/deskripsi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/label_spesifikasi" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp">
+
+            <TableRow style="@style/table_row">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="80dp"
+                    android:text="@string/label_alias" />
+
+                <TextView
+                    style="@style/text_specs"
+                    android:text="@string/alias" />
+
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_rilis" />
+
+                <TextView
+                    style="@style/text_specs"
+                    android:text="@string/rilis" />
+
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_layar" />
+
+                <TextView
+                    style="@style/text_specs"
+                    android:layout_weight="1"
+                    android:text="@string/layar" />
+
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_processor" />
+
+                <TextView
+                    style="@style/text_specs"
+                    android:text="@string/processor" />
+
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_grafis" />
+
+                <TextView
+                    style="@style/text_specs"
+                    android:text="@string/grafis" />
+
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_ram" />
+
+                <TextView
+                    style="@style/text_specs"
+                    android:text="@string/ram" />
+
+            </TableRow>
+
+            <TableRow style="@style/table_row">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_antutu" />
+
+                <TextView
+                    style="@style/text_specs"
+                    android:text="@string/antutu" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/btn_beli" />
+
+    </LinearLayout>
+
+</ScrollView>
